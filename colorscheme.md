@@ -17,7 +17,7 @@ Green
 	RGB: 36
 		 161
 		 139
-Coral (buttons)
+Coral
 	Hex: #E5645D
 	RGB: 229
 		 100

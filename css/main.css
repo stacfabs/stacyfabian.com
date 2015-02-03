@@ -1,7 +1,147 @@
+/* ---- TOP NAV MENU ---- */
+
+.navbar {
+	margin-bottom: 0;
+    z-index: 10;
+    font-family: 'Oswald',Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.navbar-custom {
+	margin-bottom: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 1.3em;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li.active {
+    outline: none;
+    background-color: #EBD3C8;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+    outline: 0;
+    background-color: #fff;
+}
+
+.top-nav-collapse {
+    background-color: #2D2125;
+}
+
+/* ---- JUMBOTRON ---- */
+
+#jumbotron {
+    color: white;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 75px 0;
+    text-align: center;
+    background: no-repeat bottom center scroll;
+    background-color: #333;
+    /* below for if decide to use image for background instead of color
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    */
+}
+
+#jumbotron .page-scroll {
+    font-size: 2.5em;
+    color: white;
+}
+
+#jumbotron a:hover {
+    color: black;
+}
+
+#jumbotron .quote {
+	font-weight: 3em;
+
+}
+
+/* ---- ABOUT ---- */
+
+#about {
+	background-color: #24A18B;
+}
+
+.biopic {
+	width: 60%;
+	padding-bottom: 5%;
+}
+
+/* ---- PORTFOLIO ---- */
+
+#portfolio {
+	background-color: #EBD3C8;
+	padding-bottom: 5%;
+}
+
 .portfolio {
 	background-color: #24A18B;
 }
 
+/* ---- CONTACT ---- */
+
 .contact {
 	background-color: #3162B2;
+}
+
+#contact {
+	background-color: #E5645D;
+	padding-bottom: 5%;
+}
+
+/* ---- FOOTER ---- */
+
+#footer .footerList {
+	float: center;
+}
+
+#footer {
+	background-color: #333;
+}
+
+.icon-img {
+	float: center;
+	max-height: 75px;
+	padding: 10% 0 10% 0;
+}
+
+#copyright {
+	color: #fff;
 }
