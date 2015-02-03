@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <!-- IE Comptability -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <!-- Responsive sizing -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>    
     <title>Stacy Fabian | Portland, OR</title>
     <link type='text/css' rel='stylesheet' href='css/normalize.css'>
     <link type='text/css' rel='stylesheet' href='css/bootstrap.min.css'>
     <link type='text/css' rel='stylesheet' href='css/main.css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500italic' rel='stylesheet' type='text/css'>
   </head>
   
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <body id='page-top' data-spy='scroll' data-target=".navbar-fixed-top">
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
@@ -22,7 +23,7 @@
             <!-- <span class="sr-only">Toggle navigation</span> -->
             <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
           </button>
-          <a class="navbar-initials nav-scroll" href="#page-top">StacFabs</a>
+          <a class="navbar-brand nav-scroll" href="#page-top">StacFabs</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -53,27 +54,26 @@
             <li data-target="#image-carousel" data-slide-to="1"></li>
             <li data-target="#image-carousel" data-slide-to="2"></li>
           </ol>
-
-          <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner"> <!-- role="listbox" -->
             <div class="item active">
-              <div class="quote-block">
+              <div>  <!-- class="quote-block" -->
                 <img src="images/stock_bikes.jpg" alt="Parked Bikes" class="img-responsive">
-                <p>Lifelong student with an aptitude for technology.</p> 
-                <p>Drupal, Git, JavaScript, jQuery, HTML, CSS, PHP, Ruby, Python & Growing Daily</p>
+                <p class="title">Student with an aptitude for technology.</p> 
+                <p class="minor-title">Drupal, Git, JavaScript, jQuery, HTML, CSS, PHP, Ruby, Python & Growing Daily</p>
               </div>
             </div>
             <div class="item">
-              <div class="quote-block">
+              <div> <!-- class="quote-block" -->
                 <img src='images/stock_road.jpg' alt="Empty Road" class="img-responsive">
-                <p>"Stacy is a wonderful combination of hard-working, highly social, and low-maintenance..."</p> 
-                <p>~ Trista R. (Portland Code School Team Member)</p>
+                <p class="title">"Stacy is a wonderful combination of hard-working, highly social, and low-maintenance..."</p> 
+                <p class="minor-title">~ Trista R. (Portland Code School Team Member)</p>
               </div>
             </div>
             <div class="item">
-              <div class="quote-block">
+              <div>  <!-- class="quote-block" -->
                 <img src='images/stock_tables.jpg' alt="Empty tables" class="img-responsive">
-                <p class="quote">"Culture Fit, Team Player, Wonderful Addition to Any Software Project"</p> 
-                <p class="byline">See what people are saying about me</p>
+                <p class="title">"I'm kinda of a Big Deal"</p> 
+                <p class="minor-title"></p>
               </div>
             </div>
           </div>
@@ -101,17 +101,15 @@
           <img src="images/familyPhoto.jpeg" class="img-responsive img-circle biopic"/>
         </div>
         <div class="bio col-md-6 col-md-offset-0 col-sm-5 col-xs-10 col-xs-offset-1">
-          <h4>Recent Graduate of Portland Code School's FullStack JavaScript Program. A great culture fit with the drive to learn from the best while providing high value to my new employment family.</h4>
-          <p>I'm a web developer with a thirst for knowledge. I have had a knack for all things technical. After spending time with organizations in various industries, I have learned that web development suits me great and I have a thirst for more. This led me to learn to use Javascript on the front and back ends. I continue to learn, grow, and practice my craft as I expand into software development while learning the Ruby and Python programing languages.
+          <p class="about-text">I'm a web developer with a thirst for knowledge and a knack for all things technical. After spending time with organizations in various industries, I have learned that web development suits me great and I have a thirst for more. This led me to learn to use Javascript on the front and back ends. I continue to learn, grow, and practice my craft as I expand into software and web development while learning the Ruby and Python programing languages.
           </p>
-          <p>I moved to Portland, OR in 2012. I'm begining to fall in love with the Pacific Northwest. When I'm not programming, I enjoy spending time with my husband and two young boys, cooking, baking, paper-crafting, and learning to build the ultimate race track.
+          <p class="about-text">I moved to Portland, OR in 2012 and I'm begining to fall in love with the Pacific Northwest and see why people generall don't leave. When I'm not programming, I enjoy spending time with my husband and two young boys, cooking, baking, paper-crafting, and learning to build the ultimate race track.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="parallax-window" data-parallax="scroll" data-image-src="../stockphotos/road.jpg"></div>
-
+    <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../stockphotos/road.jpg"></div -->
     <div id="portfolio">
       <div class="container">
         <div class="row">
@@ -123,7 +121,7 @@
           <div class="col-md-4 portfolio-item">
             <a href="http://ratherfit.herokuapp.com/" class="portfolio-link">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+                <div class="portfolio-hover-image">
                   <span class="glyphicon glyphicon-plus"></span>
                 </div>
               </div>
@@ -145,7 +143,7 @@
           <div class="col-md-4 portfolio-item">
             <a href="http://rednotefoundation.org/" class="portfolio-link">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+                <div class="portfolio-hover-image">
                   <span class="glyphicon glyphicon-plus"></span>
                 </div>
               </div>
@@ -163,7 +161,7 @@
           </div>
           <!--
           <div class="col-md-4 portfolio-item">
-            INSERT MORE PORTFOIO ITEMS
+            INSERT MORE PORTFOIO ITEMS HERE
           </div>
           -->
         </div>
@@ -174,7 +172,7 @@
     </div>
 
       
-    <div class="parallax-window" data-parallax="scroll" data-image-src="../stockphotos/bikes.jpg"></div> 
+    <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../stockphotos/bikes.jpg"></div> -->
     <div id="contact">
       <div class="container-fluid">
         <div class="row">

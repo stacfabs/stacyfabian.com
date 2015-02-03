@@ -6,6 +6,7 @@
     font-family: 'Oswald',Arial,sans-serif;
     font-weight: 500;
     font-size: 1.5em;
+    background-color: #2B1E16;
 }
 
 .navbar-custom {
@@ -40,7 +41,7 @@
 
 .navbar-custom .nav li.active {
     outline: none;
-    background-color: #EBD3C8;
+    background-color: #808080;
 }
 
 .navbar-custom .nav li a {
@@ -53,17 +54,18 @@
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #fff;
+    background-color: #3162B2;
 }
 
 .top-nav-collapse {
     background-color: #2D2125;
 }
 
-/* ---- JUMBOTRON ---- */
+/* ---- JUMBOTRON & CAROUSEL ---- */
 
 #jumbotron {
-    color: white;
+    color: #fff;
+    font-weight: 4em;
     margin-bottom: 0;
     width: 100%;
     height: auto;
@@ -79,40 +81,110 @@
     */
 }
 
-#jumbotron .page-scroll {
-    font-size: 2.5em;
-    color: white;
+#jumbotron img {
+	-webkit-filter: opacity(.2);
+	filter: opacity(.2);
 }
 
 #jumbotron a:hover {
-    color: black;
+    color: #fff;
 }
 
-#jumbotron .quote {
-	font-weight: 3em;
+#image-carousel .quote-block {
+    height: 20em;
+    padding: 4em 1em 0 1em;
+}
 
+#image-carousel .title {
+    font-weight: 500;
+    font-family: 'Alegreya Sans',Arial,sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#image-carousel .minor-title {
+    padding-top: 0.5em;
+    font-weight: 300;
+    font-family: 'Alegreya Sans',Arial,sans-serif;
+    font-size: 1.5em;
 }
 
 /* ---- ABOUT ---- */
 
 #about {
 	background-color: #24A18B;
+    box-shadow: inset 0px 10px 30px 0px #909090, 0px 10px 30px 0px #473225;
 }
 
 .biopic {
 	width: 60%;
-	padding-bottom: 5%;
+	padding-bottom: 2em;
+}
+
+.about-text {
+	font-size: 1.2em
 }
 
 /* ---- PORTFOLIO ---- */
 
 #portfolio {
 	background-color: #EBD3C8;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
+    box-shadow: inset 0px 10px 30px 0px #909090, 0px 10px 30px 0px #473225;
 }
 
+#portfolio .portfolio-area {
+    margin-top: 2%;
+}
+/*
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+*/
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    /*max-width: 400px;*/
+    /*
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);  
+    */
+}
 .portfolio {
 	background-color: #24A18B;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 93%;
+    height: 93%;
+    opacity: 0;
+    background: #B2B2B2;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-image {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-image i {
+    margin-top: -12px;
 }
 
 /* ---- CONTACT ---- */
@@ -123,7 +195,8 @@
 
 #contact {
 	background-color: #E5645D;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
+    box-shadow: inset 0px 5px 20px 0px #909090, 0px 5px 20px 0px #473225;
 }
 
 /* ---- FOOTER ---- */
