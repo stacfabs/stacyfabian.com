@@ -76,7 +76,7 @@ h6 {
     text-align: center;
     background: no-repeat bottom center scroll;
     background-color: #333;
-    /* below for if decide to use image for background instead of color
+    /*
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -85,24 +85,14 @@ h6 {
 }
 
 #jumbotron img {
+    width: ;
+    height: auto;
 	-webkit-filter: opacity(.2);
 	filter: opacity(.2);
 }
 
 #jumbotron a:hover {
     color: #fff;
-}
-
-#image-carousel .quote-block {
-    height: 20em;
-    padding: 4em 1em 0 1em;
-}
-
-#image-carousel .title {
-    font-weight: 500;
-    font-family: 'Alegreya Sans',Arial,sans-serif;
-    font-size: 2em;
-    line-height: 1em;
 }
 
 #image-carousel .minor-title {
