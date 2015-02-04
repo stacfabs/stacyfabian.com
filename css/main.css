@@ -1,3 +1,22 @@
+html {
+	height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lato',Arial,sans-serif;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Alegreya Sans',Arial,sans-serif;
+}
+
 /* ---- TOP NAV MENU ---- */
 
 .navbar {
@@ -6,7 +25,7 @@
     font-family: 'Oswald',Arial,sans-serif;
     font-weight: 500;
     font-size: 1.5em;
-    background-color: #2B1E16;
+    background-color: #241912;
 }
 
 .navbar-custom {
@@ -19,18 +38,6 @@
 }
 
 .navbar-custom .navbar-brand:focus {
-    outline: 0;
-    text-decoration: none;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
     text-decoration: none;
 }
@@ -54,11 +61,7 @@
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #3162B2;
-}
-
-.top-nav-collapse {
-    background-color: #2D2125;
+    background-color: #808080;
 }
 
 /* ---- JUMBOTRON & CAROUSEL ---- */
@@ -201,10 +204,6 @@
 
 /* ---- FOOTER ---- */
 
-#footer .footerList {
-	float: center;
-}
-
 #footer {
 	background-color: #333;
 }
@@ -215,6 +214,6 @@
 	padding: 10% 0 10% 0;
 }
 
-#copyright {
+#footer #copyright {
 	color: #fff;
 }
