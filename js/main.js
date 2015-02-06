@@ -15,6 +15,8 @@ $(function() {
 });
 
 // ---- CONTACT FORM ----
+// Adjusted from source: http://myprogrammingblog.com/2013/08/27/how-to-make-a-contact-form-with-bootstrap-3-jqueryphphtml5jqbootstrapvalidation/
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -34,7 +36,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "stacy.fabian@gmail.com", //insert url for AWS once working
+                url: "../php/contactform.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -61,7 +63,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that the mail server is not responding. Please try again later or find me via linkedin.");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that the mail server is not responding. You can email me directly at stacy.fabian.pdx@gmail.com.");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -78,7 +80,6 @@ $(function() {
         $(this).tab("show");
     });
 });
-
 
 // When clicking on Full hide fail/success boxes
 $('#name').focus(function() {

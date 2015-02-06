@@ -156,17 +156,15 @@
               <h4>Red Note Foundation</h4>
               <p>Technology Director (Volunteer position)</p>
               <p>A fully volunteer based organization formed in Jan 2013, Red Note Foundation raises donations to help fund and promote music education and scholarship opportunities in Arizona. I joined in July 2013 as Technology Director where my efforts quickly began to span all aspects of the organization utilizing my expansive work history. Responsibilities and contributions include:</p>
-                <ul>
-                  <h4>Website Development</h4>
-                    <ul>
-                      <li>Led website re-design from existing template to match branding</li>
-                      <li>Maintain website with minimal content input on Drupal 7.0 platform</li>
-                    </ul>
-                  <h4>Technology Management</h4>
-                    <ul>
-                      <li>Advise on any hardware or software technology used in business management</li>
-                    </ul>
-                </ul>
+                <h4>Website Development</h4>
+                  <ul>
+                    <li>Led website re-design from existing template to match branding</li>
+                    <li>Maintain website with minimal content input on Drupal 7.0 platform</li>
+                  </ul>
+                <h4>Technology Management</h4>
+                  <ul>
+                    <li>Advise on any hardware or software technology used in business management</li>
+                  </ul>
             </div>
           </div>
           <!--
@@ -190,6 +188,32 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
+            
+            <form name="sentMessage" class="well" id="contact-box"  novalidate>
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name" />
+                    <p class="help-block"></p>
+                  </div>
+                </div>   
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email" />
+                  </div>
+                </div>  
+        
+               <div class="control-group">
+                  <div class="controls">
+                    <textarea rows="3" cols="100" class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter your message" minlength="5" maxlength="999" style="resize:vertical"></textarea>
+                  </div>
+               </div>      
+              <div id="success"> </div>
+              <!-- For success/fail messages -->
+                <p id='privacy-notice'>Your information is never shared or sold.</p>
+                <button type="submit" class="btn btn-primary pull-right">Submit</button><br />
+            </form>
+
+<!-- 
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="row">
                 <div class="col-md-8 col-md-offset-2">
@@ -218,6 +242,8 @@
                 <div class="clearfix"></div>
               </div>
             </form>
+-->
+
           </div>
         </div>
       </div>
@@ -237,7 +263,7 @@
               <p>&copy; Stacy Fabian 2015</p>
             </li>
             <li>
-              <a href="#page-top">Back to top</a>
+              <a href="#page-top">Back to Top</a>
             </li>
           </ul>
         </div>
@@ -247,6 +273,8 @@
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="./js/jqBootstrapValidation.js"></script>
+    <!-- ?? <script type="text/javascript" src="./js/contact_me.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
 
   </body>
