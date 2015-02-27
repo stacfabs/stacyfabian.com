@@ -102,6 +102,7 @@ h6 {
 .biopic {
 	width: 70%;
 	padding-bottom: 2em;
+    position: inline-block;
 }
 
 .about-text {
